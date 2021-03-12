@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <title>פיצה טעמי - טופס הרשמה</title>
     <link rel="stylesheet" href="style.css">
-    <script type="text/javascript" src="./js/login.js"> </script>
+    <script type="text/javascript" src="../js/cookie.js"> </script>
 </head>
 <body>
 <div class="bodydiv">
@@ -31,8 +31,8 @@
     <h1>טופס הרשמה</h1>
     <img width="140px" height="140px" src="img/register.jpg"></img>
     <div id="input_div_page">
-        <input placeholder="שם משתמש" name="username" type="text"/>
-        <input placeholder="סיסמא" name="password" type="password"/>
+        <input id="username" placeholder="שם משתמש" name="USER_NAME" type="text"/>
+        <input id="pass" placeholder="סיסמא" name="PASSWORD" type="password"/>
         <input placeholder="מספר פלאפון" type="text"/>
         <input placeholder="עיר" type="text"/>
         <input placeholder="רחוב" type="text"/>
@@ -41,7 +41,7 @@
         <input placeholder="רחוב" type="text"/>
         <input placeholder="עיר" type="text"/>
     </div>
-    <button onclick="loginClick(username,password)" class="login_button">הרשמה</button>
+    <button class="login_button" onclick="getInputForUser()" >הרשמה</button>
     </br></br></br></br>
 </div>
     <div id="rights">
