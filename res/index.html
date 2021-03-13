@@ -5,6 +5,7 @@
     <title>פיצה טעמי - תטעם, תבין !</title>
     <link rel="stylesheet" href="style.css">
     <script type="text/javascript" src="../js/cookie.js"> </script>
+    <script src="../js/js.js"></script>
 </head>
 <body>
 <div class="bodydiv">
@@ -33,9 +34,9 @@
         </br>
         <h1 class="textshape">כניסה לחבר מועדון</h1>
         </br>
-        <input id="username2" placeholder="שם משתמש" type="text"/>
-        <input id="pass2b" placeholder="סיסמא" type="password"/>
-        <button onclick="getChek()" class="login_button">התחברות</button>
+        <input id="use_NAME" placeholder="שם משתמש" type="text"/>
+        <input id="passWorde" placeholder="סיסמא" type="password"/>
+        <button onclick="onclickinput()" class="login_button">התחברות</button>
         <p>או התחבר באמצעות</p>
         </br>
         <div id="gmface">
@@ -44,14 +45,6 @@
         </div>
         </br></br>
         <div class="clock">
-            <SCRIPT language=JavaScript>
-                function process(){}
-                today = new Date()
-                if(today.getMinutes() < 10) {pad = "0"}
-                else
-                    pad = "";
-                document.write("השעה:  ",today.getHours(),":",pad,today.getMinutes())
-                // end hiding contents --></SCRIPT>
         </div>
     </div>
     </br></br></br></br>

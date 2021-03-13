@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <title>פיצה טעמי - תפריט פיצות</title>
     <link rel="stylesheet" href="style.css">
-    <script type="text/javascript" src="./js/login.js"> </script>
+    <script src="../js/js.js"></script>
 </head>
 <body>
 <div class="bodydiv">
@@ -30,7 +30,7 @@
     <div class="pizza">
         <h1>תפריט פיצות</h1>
         <img src="img/D1.jpg"></img>
-        <h2>פיצה משפחתית ענקית</h2>
+        <h2 onload="meun()">פיצה משפחתית ענקית</h2>
         <select name=תוספות>
             <option value="1">ללא תוספות</option>
             <option value="2">₪10 = גבינה בולגרית</option>
@@ -70,7 +70,7 @@
             <option value="17">₪10 = אנשובי</option>
         </select >
         <h3>מחיר: ₪60</h3>
-        <button class="login_button" onclick="">הוסף לסל</button>
+        <button class="login_button" onclick="onclickmeun()">הוסף לסל</button>
 
 
         <img src="img/D1.jpg"></img>
@@ -114,7 +114,7 @@
             <option value="17">₪8 = אנשובי</option>
         </select >
         <h3>מחיר: ₪40</h3>
-        <button class="login_button" onclick="">הוסף לסל</button>
+        <button class="login_button" onclick="onclickmeun()">הוסף לסל</button>
 
 
         <img src="img/D1.jpg"></img>
@@ -138,27 +138,27 @@
             <option value="16">₪5 = שרי קלוי</option>
             <option value="17">₪5 = אנשובי</option>
         </select >
-        <select name=תוספות>
-            <option value="1">ללא תוספות</option>
-            <option value="2">₪5 = גבינה בולגרית</option>
-            <option value="3">₪5 = עגבניות</option>
-            <option value="4">₪5 = תירס</option>
-            <option value="5">₪5 = בצל</option>
-            <option value="6">₪5 = פלפל קלוי</option>
-            <option value="7">₪5 = גמבה</option>
-            <option value="8">₪5 = חצילים</option>
-            <option value="9">₪5 = פטריות</option>
-            <option value="10">₪5 = טונה</option>
-            <option value="11">₪5 = זיתים ירוקים</option>
-            <option value="12">₪5 = זיתים שחורים</option>
-            <option value="13">₪5 = ביצה קשה</option>
-            <option value="14">₪5 = אננס</option>
-            <option value="15">₪5 = שיפקה</option>
-            <option value="16">₪5 = שרי קלוי</option>
-            <option value="17">₪5 = אנשובי</option>
+        <select id="tosepet" name=תוספות>
+            <option value="0">ללא תוספות</option>
+            <option value="1">₪5 = גבינה בולגרית</option>
+            <option value="2">₪5 = עגבניות</option>
+            <option value="3">₪5 = תירס</option>
+            <option value="4">₪5 = בצל</option>
+            <option value="5">₪5 = פלפל קלוי</option>
+            <option value="6">₪5 = גמבה</option>
+            <option value="7">₪5 = חצילים</option>
+            <option value="8">₪5 = פטריות</option>
+            <option value="9">₪5 = טונה</option>
+            <option value="10">₪5 = זיתים ירוקים</option>
+            <option value="11">₪5 = זיתים שחורים</option>
+            <option value="12">₪5 = ביצה קשה</option>
+            <option value="13">₪5 = אננס</option>
+            <option value="14">₪5 = שיפקה</option>
+            <option value="15">₪5 = שרי קלוי</option>
+            <option value="16">₪5 = אנשובי</option>
         </select >
-        <h3>מחיר: ₪30</h3>
-        <button class="login_button" onclick="">הוסף לסל</button>
+        <h3>מחיר: </h3>
+        <button class="login_button" onclick="onclickmeun()">הוסף לסל</button>
         </br></br>
         <h4>:תוספת נוספת בתשלום לבחירה</h4>
             <h5>גבינה בולגרית | עגבניות | תירס | בצל | פלפל קלוי | גמבה | חצילים | פטריות | טונה </br>

@@ -17,30 +17,6 @@ setCookie = (name, value, days) => {
     let expires = "expires=" + d.toUTCString();
     document.cookie = name + "=" + value + ";" + expires + ";path=/";
 }
-getCookie = (name) => {
-    name += "=";
-    let decodedCookie = decodeURIComponent(document.cookie);
-    let ca = decodedCookie.split(';');
-    for (let i = 0; i < ca.length; i++) {
-        let c = ca[i];
-        while (c.charAt(0) == ' ') {
-            c = c.substring(1);
-        }
-        if (c.indexOf(name) == 0) {
-            return c.substring(name.length, c.length);
-        }
-    }
-    return "";
-}
-
-checkIfCookieExist = () => {
-    let username = getCookie("username");
-    let password = getCookie("password");
-    if (username.length > 0 && password.length > 0)
-        console.log(true)
-    else
-        console.log(false)
-}
 
 deleteCookie = (name, path) => {
     setCookie(name, '', -1, "=/")
@@ -49,20 +25,36 @@ deleteCookie = (name, path) => {
 getInputForUser=()=>{
     let valueForUsername = document.getElementById("username");
     let valueForFassworde = document.getElementById("pass");
-    if (valueForUsername.value.length>4){
+    if (valueForUsername.value.length>4 && valueForFassworde.value.length > 4){
        setCookie(USER_NAME = valueForUsername.value,PASSWORD = valueForFassworde.value,45);
+       alert("!נרשמת בהצלחה")
     }
     else {
         alert("אנא בדוק את השם משתש והסיסמא והזן ערך תקין") ;
     }
 }
-getChek=()=>{
-    let valueForUsername2 = document.getElementById("username2");
-    let valueForFassworde2 = document.getElementById("pass2");
-    if ( checkIfCookieExist(valueForUsername2 == useer)  && valueForFassworde2== valueForFassworde){
-        alert("המשתמש התחבר בהצחלה!");
+getInputForUser2=()=>{
+    let valueForUsername2 = document.getElementById("userName");
+    let valueForFassworde2 = document.getElementById("passWorde");
+}
+function getchiek(){
+    if (getInputForUser()==getInputForUser2()){
+        alert("a")
     }
     else{
-        alert("נא לבדוק את הפרטים!");
+        alert("b")
+    }
+}
+
+onclickC=()=> {
+    let nameUser = document.getElementById("name");
+    let phoneU = document.getElementById("phone");
+    let mailU = document.getElementById("mail");
+    let text = document.getElementById("text");
+    if (name > 0 && phone==10 && mail == 10 && text > 0) {
+        alert("הפנייה נשלה ב הצלחה לבית העסק!");
+    } else
+    {
+            alert("אנא בדקו את אחד מנתונים שלכם!");
     }
 }

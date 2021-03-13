@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <title>פיצה טעמי - צור קשר</title>
     <link rel="stylesheet" href="style.css">
-    <script type="script" src="../js/js.js"> </script>
+    <script src="../js/js.js"> </script>
     <script type="text/javascript" src="../js/cookie.js"> </script>
 </head>
 <body>
@@ -31,12 +31,12 @@
     </br></br>
     <h1>טופס יצירת קשר</h1>
     <div id="input_div_page">
-        <input placeholder="שם מלא" type="text"/>
-        <input placeholder="פלאפון" type="text"/>
-        <input placeholder="דואר אלקטרוני" type="text"/>
-        <textarea placeholder="הודעה" style="width:200px; height:100px;"></textarea>
+        <input id="name" placeholder="שם מלא" type="text"/>
+        <input id="phone" placeholder="פלאפון" type="text"/>
+        <input id="mail" placeholder="דואר אלקטרוני" type="text"/>
+        <textarea id="text" placeholder="הודעה" style="width:200px; height:100px;"></textarea>
     </div>
-    <button class="login_button"onclick="onclick">שלח</button>
+    <button class="login_button"onclick="onclickC()">שלח</button>
     </br></br></br></br>
         <a id="a1" href="tel:0501234567"> לייצרת קשר טלפונית חייגו: 0501234567</a>
         <a id="a1" href="https://api.whatsapp.com/send?phone=0501234567"> !ליצירת קשר והזמנות בווטסאפ לחצ/י כאן</a>
