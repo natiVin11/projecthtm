@@ -33,28 +33,13 @@ getInputForUser=()=>{
         alert("אנא בדוק את השם משתש והסיסמא והזן ערך תקין") ;
     }
 }
-getInputForUser2=()=>{
-    let valueForUsername2 = document.getElementById("userName");
-    let valueForFassworde2 = document.getElementById("passWorde");
-}
-function getchiek(){
-    if (getInputForUser()==getInputForUser2()){
-        alert("a")
+getInputForUse2r=()=>{
+    let valueForUsername2 = document.getElementById("username2");
+    let valueForFassworde2 = document.getElementById("pass2");
+    if (valueForUsername2.value.length>4 && valueForFassworde2.value.length > 4 && valueForUsername2 == valueForUsername  && valueForFassworde2 == valueForFassworde){
+        alert("!התחברת בהצלחה")
     }
-    else{
-        alert("b")
-    }
-}
-
-onclickC=()=> {
-    let nameUser = document.getElementById("name");
-    let phoneU = document.getElementById("phone");
-    let mailU = document.getElementById("mail");
-    let text = document.getElementById("text");
-    if (name > 0 && phone==10 && mail == 10 && text > 0) {
-        alert("הפנייה נשלה ב הצלחה לבית העסק!");
-    } else
-    {
-            alert("אנא בדקו את אחד מנתונים שלכם!");
+    else {
+        alert("אנא בדוק את השם משתש והסיסמא והזן ערך תקין") ;
     }
 }

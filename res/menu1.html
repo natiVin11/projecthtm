@@ -25,14 +25,18 @@
     <a href="register.html">הרשמה</a>
     <a href="index.html">עמוד ראשי</a>
 </div></div>
-
-<div id="page_div">
-    <div class="pizza">
+    <div id="bottom_div">
+    <input type="text" id="myInput" onkeyup="myFunction()" placeholder="Search for names.." title="שורת חיפוש">
+    <ul id="myUL">
+    </ul>
+    </div>
+    <div id="page_div">
+        <div class="pizza">
         <h1>תפריט פיצות</h1>
         <img src="img/D1.jpg"></img>
-        <h2 onload="meun()">פיצה משפחתית ענקית</h2>
+        <h2>פיצה משפחתית ענקית</h2>
         <select name=תוספות>
-            <option value="1">ללא תוספות</option>
+            <option value="1">תוספות</option>
             <option value="2">₪10 = גבינה בולגרית</option>
             <option value="3">₪10 = עגבניות</option>
             <option value="4">₪10 = תירס</option>
@@ -50,8 +54,9 @@
             <option value="16">₪10 = שרי קלוי</option>
             <option value="17">₪10 = אנשובי</option>
         </select >
+        <button class="tosppet_bootun" onclick="tospet1()">!הוסף תוספת</button>
         <select name=תוספות>
-            <option value="1">ללא תוספות</option>
+            <option value="1">תוספות</option>
             <option value="2">₪10 = גבינה בולגרית</option>
             <option value="3">₪10 = עגבניות</option>
             <option value="4">₪10 = תירס</option>
@@ -69,14 +74,15 @@
             <option value="16">₪10 = שרי קלוי</option>
             <option value="17">₪10 = אנשובי</option>
         </select >
-        <h3>מחיר: ₪60</h3>
-        <button class="login_button" onclick="onclickmeun()">הוסף לסל</button>
+        <button class="tosppet_bootun" onclick="tospet12()">!הוסף תוספת</button>
+        <h3 id="h3_pizza1">מחיר: ₪60</h3>
+        <button class="menu_button" onclick="onclickmeun()">הוסף לסל</button>
 
 
         <img src="img/D1.jpg"></img>
         <h2>פיצה משפחתית</h2>
-        <select name=תוספות>
-            <option value="1">ללא תוספות</option>
+        <select  name=תוספות>
+            <option value="1">תוספות</option>
             <option value="2">₪8 = גבינה בולגרית</option>
             <option value="3">₪8 = עגבניות</option>
             <option value="4">₪8 = תירס</option>
@@ -94,8 +100,9 @@
             <option value="16">₪8 = שרי קלוי</option>
             <option value="17">₪8 = אנשובי</option>
         </select >
-        <select name=תוספות>
-            <option value="1">ללא תוספות</option>
+        <button onclick="tospet2()" class="tosppet_bootun">!הוסף תוספת</button>
+        <select  name=תוספות>
+            <option value="1">תוספות</option>
             <option value="2">₪8 = גבינה בולגרית</option>
             <option value="3">₪8 = עגבניות</option>
             <option value="4">₪8 = תירס</option>
@@ -113,14 +120,15 @@
             <option value="16">₪8 = שרי קלוי</option>
             <option value="17">₪8 = אנשובי</option>
         </select >
-        <h3>מחיר: ₪40</h3>
-        <button class="login_button" onclick="onclickmeun()">הוסף לסל</button>
+        <button onclick="tospet22()" class="tosppet_bootun">!הוסף תוספת</button>
+        <h3 id="h3_pizza2">מחיר: ₪40</h3>
+        <button class="menu_button" onclick="onclickmeun()">הוסף לסל</button>
 
 
         <img src="img/D1.jpg"></img>
         <h2>פיצה  אישית</h2>
         <select name=תוספות>
-            <option value="1">ללא תוספות</option>
+            <option value="1">תוספות</option>
             <option value="2">₪5 = גבינה בולגרית</option>
             <option value="3">₪5 = עגבניות</option>
             <option value="4">₪5 = תירס</option>
@@ -138,8 +146,9 @@
             <option value="16">₪5 = שרי קלוי</option>
             <option value="17">₪5 = אנשובי</option>
         </select >
-        <select id="tosepet" name=תוספות>
-            <option value="0">ללא תוספות</option>
+        <button onclick="tospet3()" class="tosppet_bootun">!הוסף תוספת</button>
+        <select id="tosepet33" name=תוספות>
+            <option value="0">תוספות</option>
             <option value="1">₪5 = גבינה בולגרית</option>
             <option value="2">₪5 = עגבניות</option>
             <option value="3">₪5 = תירס</option>
@@ -157,16 +166,19 @@
             <option value="15">₪5 = שרי קלוי</option>
             <option value="16">₪5 = אנשובי</option>
         </select >
-        <h3>מחיר: </h3>
-        <button class="login_button" onclick="onclickmeun()">הוסף לסל</button>
+        <button onclick="tospet32()" class="tosppet_bootun">!הוסף תוספת</button>
+        <h3 id="h3_pizza3">מחיר: 20 </h3>
+        <button class="menu_button" onclick="onclickmeun()">הוסף לסל</button>
         </br></br>
+            <div id="input_div"
         <h4>:תוספת נוספת בתשלום לבחירה</h4>
             <h5>גבינה בולגרית | עגבניות | תירס | בצל | פלפל קלוי | גמבה | חצילים | פטריות | טונה </br>
                 זיתים ירוקים | זיתים שחורים | ביצה קשה | אננס | שיפקה | שרי קלוי | אנשובי</h5>
 
     </div>
-    <a id="a1" href="https://api.whatsapp.com/send?phone=0501234567">!להזמנות בוואטסאפ</a>
-    <a id="a1" href="tel:0501234567">  להזמנות חייגו: 0501234567</a>
+    </div>
+    <a class="a1" href="https://api.whatsapp.com/send?phone=0501234567">!להזמנות בוואטסאפ</a>
+    <a class="a1" href="tel:0501234567">  להזמנות חייגו: 0501234567</a>
     </br></br></br>
 </div>
     <div id="rights">
